@@ -5,6 +5,8 @@ PNGS_200 := $(patsubst %.ai, generated/%-200.png, $(LOGOS))
 SVGS := $(patsubst %.ai, generated/%.svg, $(LOGOS))
 ALL := $(PNGS_1000) $(PNGS_200) $(SVGS) 
 
+all: folders $(ALL)
+
 generated/%-1000.png: %.ai
 	convert -density 600 $^ -resize 1000x1000 $@
 	optipng -o7 $@
@@ -16,7 +18,8 @@ generated/%-200.png: %.ai
 generated/%.svg: %.ai
 	pdf2svg $^ $@
 
-all: $(ALL)
+folders:
+	@mkdir generated || true
 
 clean:
 	rm $(ALL)
