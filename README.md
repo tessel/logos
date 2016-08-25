@@ -2,7 +2,7 @@
 
 All Tessel and module logos are provided here in their original .ai source formats.
 
-To download SVGs, 200px PNGs, and 1000px PNGS, download `tessel-logos.tar.gz` from the [Releases Page](https://github.com/tessel/logos/releases).
+To download SVGs, 200px PNGs, and 1000px PNGS, download `1-tessel-logos.tar.gz` from the [Releases Page](https://github.com/tessel/logos/releases).
 
 ## Generating .svg and .png manually
 
