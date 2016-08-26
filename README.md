@@ -13,7 +13,7 @@ You can generate SVG and PNG assets from the command line, by installing a few c
 On OS X, install these through brew:
 
 ```
-brew install optipng pdf2svg imagemagick gs
+brew install optipng pdf2svg gs librsvg
 ```
 
 To run the conversion, simply run make:

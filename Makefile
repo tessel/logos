@@ -7,12 +7,12 @@ ALL := $(PNGS_1000) $(PNGS_200) $(SVGS)
 
 all: folders $(ALL) tessel-logos.tar.gz
 
-generated/%-1000.png: %.ai
-	convert -density 600 $^ -resize 1000x1000 $@
+generated/%-1000.png: generated/%.svg
+	rsvg-convert $^ -w 1000 -h 1000 -o $@
 	optipng -o7 $@
 
-generated/%-200.png: %.ai
-	convert -density 600 $^ -resize 200x200 $@
+generated/%-200.png: generated/%.svg
+	rsvg-convert $^ -w 200 -h 200 -o $@
 	optipng -o7 $@
 
 generated/%.svg: %.ai
