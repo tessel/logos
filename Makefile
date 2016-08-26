@@ -5,7 +5,7 @@ PNGS_200 := $(patsubst %.ai, generated/%-200.png, $(LOGOS))
 SVGS := $(patsubst %.ai, generated/%.svg, $(LOGOS))
 ALL := $(PNGS_1000) $(PNGS_200) $(SVGS)
 
-all: folders $(ALL) tessel-logos.tar.gz
+all: folders $(ALL) 1-tessel-logos.tar.gz
 
 generated/%-1000.png: generated/%.svg
 	rsvg-convert $^ -w 1000 -h 1000 -o $@
@@ -24,7 +24,7 @@ folders:
 clean:
 	rm $(ALL)
 
-tessel-logos.tar.gz:
-	tar cvf tessel-logos.tar.gz -C generated  .
+1-tessel-logos.tar.gz:
+	tar cvf 1-tessel-logos.tar.gz -C generated  .
 
 .PHONY: all clean
