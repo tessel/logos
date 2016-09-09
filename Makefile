@@ -25,6 +25,6 @@ clean:
 	rm $(ALL)
 
 1-archive-of-all-tessel-logos.tar.gz:
-	tar cvf 1-tessel-logos.tar.gz -C generated  .
+	tar cvf 1-archive-of-all-tessel-logos.tar.gz -C generated  .
 
 .PHONY: all clean
