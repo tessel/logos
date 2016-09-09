@@ -2,7 +2,7 @@
 
 [![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/tessel/project/blob/master/CONDUCT.md)
 
-**Go to the [Releases Page](https://github.com/tessel/logos/releases)** to directly download SVG, 200px PNG, and 1000px PNG versions of these logos. You can also download the `1-tessel-logos.tar.gz` archive of all these generated versions.
+**Go to the [Releases Page](https://github.com/tessel/logos/releases)** to directly download SVG, 200px PNG, and 1000px PNG versions of these logos. You can also download the `1-archive-of-all-tessel-logos.tar.gz` to download all generated images together.
 
 This repository contains all Tessel and module logos in their original .ai source formats. The `Makefile` converts these programmatically into various image formats.
 
